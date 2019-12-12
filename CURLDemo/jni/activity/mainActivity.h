@@ -27,7 +27,6 @@
 
 /*TAG:Macro宏ID*/
 #define ID_MAIN_ButtonWifi    20007
-#define ID_MAIN_ButtonHttps    20006
 #define ID_MAIN_ButtonHttp    20005
 #define ID_MAIN_Textview1    50001
 /*TAG:Macro宏ID END*/

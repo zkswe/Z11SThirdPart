@@ -5,7 +5,6 @@
 
 /*TAG:GlobalVariable全局变量*/
 static ZKButton* mButtonWifiPtr;
-static ZKButton* mButtonHttpsPtr;
 static ZKButton* mButtonHttpPtr;
 static ZKTextView* mTextview1Ptr;
 static mainActivity* mActivityPtr;
@@ -46,7 +45,6 @@ typedef struct {
 /*TAG:ButtonCallbackTab按键映射表*/
 static S_ButtonCallback sButtonCallbackTab[] = {
     ID_MAIN_ButtonWifi, onButtonClick_ButtonWifi,
-    ID_MAIN_ButtonHttps, onButtonClick_ButtonHttps,
     ID_MAIN_ButtonHttp, onButtonClick_ButtonHttp,
 };
 /***************/
@@ -129,7 +127,6 @@ const char* mainActivity::getAppName() const{
 void mainActivity::onCreate() {
 	Activity::onCreate();
     mButtonWifiPtr = (ZKButton*)findControlByID(ID_MAIN_ButtonWifi);
-    mButtonHttpsPtr = (ZKButton*)findControlByID(ID_MAIN_ButtonHttps);
     mButtonHttpPtr = (ZKButton*)findControlByID(ID_MAIN_ButtonHttp);
     mTextview1Ptr = (ZKTextView*)findControlByID(ID_MAIN_Textview1);
 	mActivityPtr = this;
