@@ -52,7 +52,7 @@ LOCAL_SRC_FILES  := $(MY_SRC_LIST)
 #end
 
 LOCAL_CPPFLAGS := -fexceptions -fpermissive
-LOCAL_LDFLAGS := -L$(ZKSW_PREBUILT_LIB_PATH)/system -lstlport -lz  -Linclude/openssl -lssl -lcrypto
+LOCAL_LDFLAGS := -L$(ZKSW_PREBUILT_LIB_PATH)/system -lstlport -lz 
 
 LOCAL_C_INCLUDES := $(EASYUI_COMMON_INCLUDE) \
 					$(ZKSW_PREBUILT_INCLUDE_PATH)/bionic \
